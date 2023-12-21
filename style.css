@@ -18,7 +18,7 @@ body{
         align-items: center;
         border-radius: 5px;
         background: #666;
-        background-image: url(./assets/netherlands.jpg);
+        background-image: url(./asset/netherlands.jpg);
         background-blend-mode: multiply;
         background-repeat: no-repeat;
         background-position: center;
