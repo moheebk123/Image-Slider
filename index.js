@@ -19,9 +19,9 @@ let counter = 0;
 const container = document.getElementById("container");
 const heading = document.getElementById("heading");
 const sliders = document.getElementById("sliders");
-let imageslider = document.querySelectorAll(".imageslider");
 const leftButton = document.querySelector('#left-button');
 const rightButton = document.querySelector('#right-button');
+let imageslider = document.querySelectorAll(".imageslider");
 const details = document.querySelectorAll(".details");
 
 rightButton.addEventListener("click", () => {
@@ -92,7 +92,7 @@ leftButton.addEventListener("click", () => {
         container.style.backgroundImage = `url(${images[counter + 3]})`;
         heading.innerText = `${names[counter + 3]}`;
     }
-    
+
     counter--;
     if (counter < 0) {
         counter = 4;
