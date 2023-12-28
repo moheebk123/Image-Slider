@@ -13,6 +13,7 @@ body{
     @media screen and (width <= 768px) {
         place-content: unset;
         padding: 1em;
+        overflow: hidden;
     }
 
     & #container {
