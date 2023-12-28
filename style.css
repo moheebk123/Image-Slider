@@ -128,7 +128,7 @@ body{
                 box-shadow: rgba(179, 179, 179, 0.56) 0px 22px 70px 4px;
 
                 @media screen and (width <= 768px) {
-                    height: 250px;
+                    height: 200px;
                     width: 300px;
                 }
 
