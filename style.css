@@ -114,6 +114,7 @@ body{
                 right: unset;
                 height: 40vh;
                 width: 100%;
+                overflow: hidden;
             }
 
             & .imageslider {
