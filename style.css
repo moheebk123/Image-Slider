@@ -32,7 +32,7 @@ body{
 
         @media screen and (width <= 768px) {
             width: 98%;
-            height: 50vw;
+            height: 40vh;
         }
 
         & #content {
@@ -107,10 +107,11 @@ body{
             right: -9%;
 
             @media screen and (width <= 768px) {
-                bottom: -80%;
+                bottom: -50%;
                 top: unset;
                 left: 0;
                 right: unset;
+                height: 40vh;
             }
 
             & .imageslider {
