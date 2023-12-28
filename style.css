@@ -9,7 +9,11 @@ body{
     height: 100vh;
     display: grid;
     place-content: center;
-    overflow: hidden;
+
+    @media screen and (width <= 768px) {
+        place-content: unset;
+        padding: 1em;
+    }
 
     & #container {
         width: 80vw;
@@ -18,7 +22,7 @@ body{
         align-items: center;
         border-radius: 5px;
         background: #666;
-        background-image: url(./asset/netherlands.jpg);
+        background-image: url(./assets/netherlands.jpg);
         background-blend-mode: multiply;
         background-repeat: no-repeat;
         background-position: center;
@@ -26,12 +30,22 @@ body{
         position: relative;
         transition: 0.5s ease-in;
 
+        @media screen and (width <= 768px) {
+            width: 98%;
+            height: 65%;
+        }
+
         & #content {
             margin-left: 2em;
+            margin-top: 2em;
             width: 40%;
             display: flex;
             flex-direction: column;
             gap: 2em;
+
+            @media screen and (width <= 768px) {
+                gap: 0.5em;
+            }
 
             & .details.show {
                 animation: 0.7s show-content ease-in 1;
@@ -51,10 +65,18 @@ body{
 
             & h1 {
                 font-size: 3em;
+
+                @media screen and (width <= 768px) {
+                    font-size: 1.3em;
+                }
             }
 
             & p {
                 font-size: 1.5em;
+
+                @media screen and (width <= 768px) {
+                    font-size: 1em;
+                }
             }
 
             & button {
@@ -65,6 +87,11 @@ body{
                 border: none;
                 outline: none;
                 cursor: pointer;
+
+                @media screen and (width <= 768px) {
+                    padding: 0.3em 1.5em;
+                    font-size: 0.8em;
+                }
             }
         }
 
@@ -73,11 +100,20 @@ body{
             column-gap: 2em;
             justify-content: flex-start;
             align-items: center;
-            height: 50%;
+            height: 30%;
             position: absolute;
             top: 30%;
             bottom: 30%;
             right: -9%;
+
+            @media screen and (width <= 768px) {
+                bottom: -100%;
+                top: unset;
+                left: 0;
+                right: unset;
+                height: 100%;
+                width: 100%;
+            }
 
             & .imageslider {
                 height: 100%;
@@ -88,6 +124,10 @@ body{
                 background-size: 100% 100%;
                 cursor: pointer;
                 box-shadow: rgba(179, 179, 179, 0.56) 0px 22px 70px 4px;
+
+                @media screen and (width <= 768px) {
+                    height: 50%;
+                }
 
                 &.add {
                     animation: 1s add-slide ease-in 1;
@@ -108,6 +148,10 @@ body{
             display: flex;
             gap: 1em;
 
+            @media screen and (width <= 768px) {
+                bottom: -2.5em;
+            }
+
             & i {
                 background: #fff;
                 padding: 0.5em;
@@ -115,6 +159,10 @@ body{
                 border-radius: 50%;
                 cursor: pointer;
                 box-shadow: rgba(121, 120, 120, 0.25) 0px 54px 55px, rgba(136, 136, 136, 0.12) 0px -12px 30px, rgba(140, 140, 140, 0.12) 0px 4px 6px, rgba(140, 140, 140, 0.17) 0px 12px 13px, rgba(132, 132, 132, 0.09) 0px -3px 5px;
+
+                @media screen and (width <= 768px) {
+                    font-size: 1em;
+                }
             }
         }
     }

@@ -7,11 +7,11 @@ const names = [
 ];
 
 const images = [
-    "./asset/australia.jpg",
-    "./asset/finland.jpg",
-    "./asset/iceland.jpg",
-    "./asset/ireland.jpg",
-    "./asset/netherlands.jpg",
+    "./assets/australia.jpg",
+    "./assets/finland.jpg",
+    "./assets/iceland.jpg",
+    "./assets/ireland.jpg",
+    "./assets/netherlands.jpg",
 ];
 
 let counter = 0;
