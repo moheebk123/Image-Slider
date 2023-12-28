@@ -32,7 +32,7 @@ body{
 
         @media screen and (width <= 768px) {
             width: 98%;
-            height: 40vh;
+            height: 55vh;
         }
 
         & #content {
@@ -125,7 +125,8 @@ body{
                 box-shadow: rgba(179, 179, 179, 0.56) 0px 22px 70px 4px;
 
                 @media screen and (width <= 768px) {
-                    height: 150px;
+                    height: 250px;
+                    width: 300px;
                 }
 
                 &.add {
