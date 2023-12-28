@@ -108,7 +108,7 @@ body{
             right: -9%;
 
             @media screen and (width <= 768px) {
-                bottom: -80%;
+                bottom: -100%;
                 top: unset;
                 left: 0;
                 right: unset;
